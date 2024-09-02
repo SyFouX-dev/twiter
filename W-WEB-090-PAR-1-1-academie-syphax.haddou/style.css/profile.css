@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    height: auto;
+    width: auto;
+
+}
+
+
+body{
+  background: rgb(39, 57, 71);
+}
+
+
+.wrapper .sidebar{
+    background: rgb(39, 57, 71);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    height: auto;
+    width: auto;
+}
+
+
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 40px 30px;
+    border-bottom: 1px solid #efefef;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: rgb(255, 255, 255);
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.home{
+    color: #0c7db1;
+    background: rgba(21, 21, 21, 0.447);
+    border-right: 2px solid rgb(5,68,104);
+}
+ 
+.wrapper .sidebar .deco{
+    color: red;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transform: translate(0px, -300px);
+    margin-right: 50%;
+  
+  }
+  
+#search::placeholder {
+    color: #999;
+}
+
+.profile {
+    max-width: 900px;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);;
+    border-radius: 5px;
+    background: rgb(39, 57, 71);
+    height: 980px;
+  }
+
+  .banner {
+    height: 120px;
+    background-color: rgb(105, 136, 160);
+  }
+
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgb(162, 176, 187);
+    margin: -50px auto 0;
+  }
+
+  .username {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .name {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .location {
+    margin-top: 5px;
+    color: #ffffff;
+    padding-top: 15px;
+  }  
+
+  .joined {
+    margin-top: 5px;
+    color: #ffffff;
+    padding-top: 15px;
+  }
+  
+  
+  .edit {
+    margin-top: 10px;
+    color: #fcfcfc;
+    background-color: #f1f1f168;
+    cursor: pointer;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+  .bio{
+    color: #ffffff;
+    padding-top: 15px;
+  }
+  
+  .stats {
+    margin-top: 20px;
+  }
+
+  .stats div {
+    display: inline-block;
+    margin-right: 20px;
+    color: #c7c7c7;
+    background-color: rgba(207, 214, 219, 0.248);
+  }
+
+  .following, .followers {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  
+  }
+  
+  .following:hover, .followers:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .following a, .followers a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .following a:hover, .followers a:hover {
+    color: #fff;
+  }
+  
+  
+  input[type="file"]::file-selector-button {
+    visibility: hidden;
+  }
+
+  .certif{
+    color: rgb(6, 250, 230);
+  }
+
+  .imgs{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+
+  .Tweets {
+    display: flex; 
+  }
+  
+  .username-tw{
+    color: #777;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  
+  .time{
+    color: #777;
+    padding-top: 10px;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+  
+  .name-tw {
+    color: white;
+    padding-top: 10px;
+    margin: 0 5px;
+  }
+  
+  .ellipsis a{
+    color: white;
+  }
+  .ellipsis{
+    padding-top: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon {
+    display: flex;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon > div {
+    margin-right: 10px; 
+    margin: 0 50px;
+  }
+  
+  .icon > div:hover {
+    cursor: pointer; 
+  }
+  
+  .com:hover {
+    color: rgb(50, 197, 255); 
+  }
+  
+  .re:hover {
+    color: rgb(62, 128, 0);
+  }
+  
+  .like:hover {
+    color: red;
+  }
+  
+  .book:hover {
+    color: rgb(40, 18, 236);
+  }
+  
+  
+  .ellipsis:hover{
+    transform: scale(1.2);
+  
+  }
+  
+  p{
+    color: white;
+  }
+  
+  #gsearch {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transform: translate(0px, -300px);
+    margin-right: 50%;
+  
+  }
+  
+  #gsearch::placeholder {
+    color: #999;
+  }
+
+  label{
+    color: #fcfcfc;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+    color: #fafafa;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  
+  li {
+    display: inline; 
+    margin-left: 50px; 
+  }
+  
+
